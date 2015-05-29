@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>CRUD Template</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+        <div class="center-block">
+            <div class="row">
+                <h1>Books <small>Cristina Silva</small></h1>
+            </div>
+            <div class="row">
+               <ul class="nav nav-tabs nav-justified">
+                    <li role="presentation"><a href="create.html">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                        Create</a></li>
+                    <li role="presentation" class="active"><a href="read.html">
+                       <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        Read</a></li>
+                    <li role="presentation"><a href="filter.html">
+                        <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+                        Filter</a></li>
+                    <li role="presentation" class="disabled"><a href="update.html">
+                        <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                        Update</a></li>
+                    <li role="presentation" class="disabled"><a href="delete.html">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                        Delete</a></li>
+                </ul>
+                <!-- Table -->
+                  <table class="table">
+                        <tr>
+                            <td>ISBN</td>
+                            <td>Title</td>
+                            <td>Author</td>
+                            <td>Press, Year</td>
+                            <td>Price (USD)</td>
+                            <td>
+                                <a class="btn btn-link" href="create.html">
+                                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                                    New Book
+                                </a> 
+                            </td>
+                        </tr>
+                    <tr>
+                        <td>978-0439708180</td>
+                        <td>Harry Potter and the Sorcerer's Stone</td>
+                        <td>J.K. Rowling</td>
+                        <td>Mary GrandPré, 1999</td>
+                        <td>7.48</td>
+                        <td>
+                            <a class="btn btn-link" href="update.html">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                Edit
+                            </a>
+                            <a class="btn btn-link" href="delete.html">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                Delete
+                            </a>                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>978-0307291844</td>
+                        <td>Jurassic Park: A Novel </td>
+                        <td>Michael Crichton</td>
+                        <td>Sterling Publishing, 2011</td>
+                        <td>35.84</td>
+                        <td>
+                            <a class="btn btn-link" href="update.html">
+                                <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+                                Edit
+                            </a>
+                            <a class="btn btn-link" href="delete.html">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span>
+                                Delete
+                            </a>                        
+                        </td>
+                    </tr>
+                  </table>
+            </div>
+            </div>
+    </div>
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
